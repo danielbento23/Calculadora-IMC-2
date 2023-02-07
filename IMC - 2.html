@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="estilo.css" rel="stylesheet"/>
+    <title>IMC</title>
+</head>
+
+<body>
+    <header id="cabecalho">Calcule seu IMC</header>
+<div class="container">
+    <div class="box">
+        <h2 id="alt">Altura(m)</h2>
+        <!--criamos os inputs com nomes e ids iguais, definimos o tipo deles-->
+        <input type="number" name="naltura" id="naltura">
+        <h2>Peso(kg)</h2>
+        <input type="number" name="npeso"  id="npeso">
+        <br>
+        <!-- esse input em especifico leva o evento "onclick " que recebe a função calcular()-->
+        <input type="button" value="Calcular" id= 'res'  onclick = "calcular()">
+        <br>
+    </div>
+</div>
+<!--precisamos criar este elemento por que depois ele irá receber os resultados-->
+<div id="resul">Resultado</div>
+</body>
+<script src="script.js"></script>
+</html> 
